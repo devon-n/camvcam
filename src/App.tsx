@@ -1,8 +1,20 @@
 import { useEffect, useState } from 'react'
-import { loadPairs, shotSrc, shuffle, singlesFromPairs } from './lib/deck'
+import {
+  CreditsIcon,
+  ReplayIcon,
+  ShareIcon,
+  TickIcon,
+} from './icons'
+import { loadPairs, shotSrc, singlesFromPairs } from './lib/deck'
+import {
+  gradeLine,
+  newCompareSession,
+  newGuessSession,
+  percentOf,
+} from './lib/session'
+import { shareInvite } from './lib/share'
 import {
   LAST_RESULT_KEY,
-  type CompareRound,
   type CompareSession,
   type GuessSession,
   type LastResult,
@@ -12,132 +24,6 @@ import {
 } from './types'
 
 const BRAND = 'camvcam'
-
-function ShareIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M12 3 7 8h3v6h4V8h3L12 3zm-7 12v4c0 1.1.9 2 2 2h10a2 2 0 0 0 2-2v-4h-2v4H7v-4H5z"
-      />
-    </svg>
-  )
-}
-
-function TickIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M9.2 16.6 4.8 12.2l1.4-1.4 3 3 8.6-8.6 1.4 1.4-10 10z"
-      />
-    </svg>
-  )
-}
-
-function ReplayIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M6.35 6.35 4 4v6h6L7.76 7.76A6 6 0 1 1 6 12H4a8 8 0 1 0 2.35-5.65z"
-      />
-    </svg>
-  )
-}
-
-function CreditsIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-      <path
-        fill="currentColor"
-        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
-      />
-    </svg>
-  )
-}
-
-function newGuessSession(photos: SinglePhoto[]): GuessSession {
-  return {
-    deck: shuffle(photos),
-    index: 0,
-    correct: 0,
-    played: 0,
-    ended: false,
-    flash: null,
-  }
-}
-
-function newCompareSession(pairs: PhotoPair[]): CompareSession {
-  const deck: CompareRound[] = shuffle(pairs).map((pair) => ({
-    pair,
-    leftIsIphone: Math.random() < 0.5,
-  }))
-  return {
-    deck,
-    index: 0,
-    correct: 0,
-    played: 0,
-    ended: false,
-    flash: null,
-  }
-}
-
-function percentOf(correct: number, played: number): number {
-  return played === 0 ? 0 : Math.round((correct / played) * 100)
-}
-
-function gradeLine(percent: number): string {
-  if (percent <= 20) return "Don't feel too bad, champ."
-  if (percent <= 40) return 'I would not bet on your detection skills.'
-  if (percent <= 60) return 'About as good as flipping a coin.'
-  if (percent <= 80) return 'You get most of them — a few still fool you.'
-  return "You're scary good at this."
-}
-
-function siteUrl(): string {
-  return 'https://camvcam.com/'
-}
-
-function shareBlurb(score: LastResult | null): string {
-  const challenge =
-    'Think you can spot iPhone vs Android by the photo alone?'
-  const url = siteUrl()
-  if (!score || score.played === 0) {
-    return `${challenge}\n\n${url}`
-  }
-  return `I scored ${score.correct}/${score.played} (${score.percent}%) on camvcam.\n\n${challenge}\n\n${url}`
-}
-
-/** Native share tray on touch devices (needs secure context: https or localhost). */
-function preferNativeShare(): boolean {
-  if (typeof navigator === 'undefined' || typeof navigator.share !== 'function') {
-    return false
-  }
-  if (!window.isSecureContext) return false
-  return (
-    navigator.maxTouchPoints > 0 ||
-    window.matchMedia('(pointer: coarse)').matches
-  )
-}
-
-async function shareInvite(score: LastResult | null): Promise<'shared' | 'copied' | null> {
-  const text = shareBlurb(score)
-  if (preferNativeShare()) {
-    try {
-      await navigator.share({ title: 'camvcam', text })
-      return 'shared'
-    } catch (err) {
-      if (err instanceof DOMException && err.name === 'AbortError') return null
-    }
-  }
-  try {
-    await navigator.clipboard.writeText(text)
-    return 'copied'
-  } catch {
-    return null
-  }
-}
 
 type Screen = 'guess' | 'compare' | 'credits'
 
