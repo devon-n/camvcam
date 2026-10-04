@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { loadPairs, loadSingles, shotSrc, shuffle } from './lib/deck'
+import { loadPairs, shotSrc, shuffle, singlesFromPairs } from './lib/deck'
 import {
   LAST_RESULT_KEY,
   type CompareRound,
@@ -153,9 +153,10 @@ function App() {
 
   useEffect(() => {
     let cancelled = false
-    Promise.all([loadSingles(), loadPairs()])
-      .then(([singles, pairList]) => {
+    loadPairs()
+      .then((pairList) => {
         if (cancelled) return
+        const singles = singlesFromPairs(pairList)
         setPhotos(singles)
         setPairs(pairList)
         setGuess(newGuessSession(singles))

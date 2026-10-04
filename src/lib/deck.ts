@@ -1,5 +1,8 @@
 import type { PhotoPair, SinglePhoto } from '../types'
 
+const CREDIT =
+  'Li et al., Uni-ISP / FiveCam (Hugging Face l-li/five-cam-xyz-rgb-1024)'
+
 export function shuffle<T>(items: T[]): T[] {
   const out = [...items]
   for (let i = out.length - 1; i > 0; i--) {
@@ -13,14 +16,31 @@ export function shotSrc(id: string): string {
   return `/images/singles/${id}.jpg`
 }
 
-export async function loadSingles(): Promise<SinglePhoto[]> {
-  const res = await fetch('/data/singles.json')
-  if (!res.ok) throw new Error('Could not load photos')
-  const data: unknown = await res.json()
-  if (!Array.isArray(data) || data.length === 0) {
-    throw new Error('Could not load photos')
+function asSingle(
+  id: string,
+  label: SinglePhoto['label'],
+  device: string,
+): SinglePhoto {
+  return {
+    id,
+    src: shotSrc(id),
+    label,
+    device,
+    source: 'FiveCam',
+    source_file: `${id}.jpg`,
+    license: 'MIT',
+    credit: CREDIT,
   }
-  return data as SinglePhoto[]
+}
+
+/** Guess deck: both sides of every pair (shared image files). */
+export function singlesFromPairs(pairs: PhotoPair[]): SinglePhoto[] {
+  const out: SinglePhoto[] = []
+  for (const p of pairs) {
+    out.push(asSingle(p.iphone, 'iphone', p.iphone_device))
+    out.push(asSingle(p.android, 'android', p.android_device))
+  }
+  return out
 }
 
 export async function loadPairs(): Promise<PhotoPair[]> {
