@@ -192,6 +192,35 @@ header {
   font-weight: 600;
 }
 
+.credits {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 10px;
+  min-height: 0;
+  padding: 8px 0;
+}
+
+.credits .ask {
+  margin: 0;
+}
+
+.credits p {
+  margin: 0;
+  max-width: 36ch;
+  line-height: 1.45;
+  color: var(--chalk);
+}
+
+.credits a {
+  color: var(--citrus);
+}
+
+.credits .muted {
+  padding: 0;
+  font-size: 0.9rem;
+}
+
 .results {
   display: grid;
   align-content: center;

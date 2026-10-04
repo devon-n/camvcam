@@ -73,11 +73,14 @@ async function shareInvite(score: LastResult | null): Promise<'shared' | 'copied
   }
 }
 
+type Screen = 'guess' | 'credits'
+
 function App() {
   const [photos, setPhotos] = useState<SinglePhoto[] | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
   const [session, setSession] = useState<GuessSession | null>(null)
   const [shareFlash, setShareFlash] = useState<'shared' | 'copied' | null>(null)
+  const [screen, setScreen] = useState<Screen>('guess')
 
   useEffect(() => {
     let cancelled = false
@@ -209,8 +212,19 @@ function App() {
           </div>
         </div>
         <div className="tabs">
-          <button type="button" className="on">
+          <button
+            type="button"
+            className={screen === 'guess' ? 'on' : undefined}
+            onClick={() => setScreen('guess')}
+          >
             Guess
+          </button>
+          <button
+            type="button"
+            className={screen === 'credits' ? 'on' : undefined}
+            onClick={() => setScreen('credits')}
+          >
+            Credits
           </button>
           <button
             type="button"
@@ -226,7 +240,26 @@ function App() {
         </div>
       </header>
 
-      {session.ended ? (
+      {screen === 'credits' ? (
+        <section className="credits">
+          <h2 className="ask">Credits</h2>
+          <p>
+            Photos from{' '}
+            <a
+              href="https://huggingface.co/datasets/l-li/five-cam-xyz-rgb-1024"
+              target="_blank"
+              rel="noreferrer"
+            >
+              FiveCam
+            </a>{' '}
+            (Uni-ISP), MIT license.
+          </p>
+          <p className="muted">
+            Li et al., “Uni-ISP: Unifying the Learning of ISPs from Multiple
+            Cameras,” 2024.
+          </p>
+        </section>
+      ) : session.ended ? (
         <section className="results">
           <p className="result-percent">{percent}%</p>
           <p className="result-line">
