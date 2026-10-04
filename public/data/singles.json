@@ -1,0 +1,1492 @@
+[
+  {
+    "id": "cfead00e9f",
+    "src": "/images/singles/cfead00e9f.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3Mini",
+    "source": "VISION",
+    "source_file": "D01_I_nat_0036.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "713461abde",
+    "src": "/images/singles/713461abde.jpg",
+    "label": "android",
+    "device": "Huawei Ascend",
+    "source": "VISION",
+    "source_file": "D33_I_nat_0015.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5dce980747",
+    "src": "/images/singles/5dce980747.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0028.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f95a7e50ad",
+    "src": "/images/singles/f95a7e50ad.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0076.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "95ae71184b",
+    "src": "/images/singles/95ae71184b.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0009.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e28d3bfb45",
+    "src": "/images/singles/e28d3bfb45.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0084.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "47d6d846d4",
+    "src": "/images/singles/47d6d846d4.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0092.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "da9323e77a",
+    "src": "/images/singles/da9323e77a.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0085.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "d51e8e6562",
+    "src": "/images/singles/d51e8e6562.jpg",
+    "label": "android",
+    "device": "Wiko Ridge4G",
+    "source": "VISION",
+    "source_file": "D21_I_nat_0088.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "d1572c86e3",
+    "src": "/images/singles/d1572c86e3.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0094.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "9e005de506",
+    "src": "/images/singles/9e005de506.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0006.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a469df9c29",
+    "src": "/images/singles/a469df9c29.jpg",
+    "label": "android",
+    "device": "Lenovo P70A",
+    "source": "VISION",
+    "source_file": "D07_I_nat_0083.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "3d2585a17e",
+    "src": "/images/singles/3d2585a17e.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3",
+    "source": "VISION",
+    "source_file": "D11_I_nat_0094.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "36cecf3b2e",
+    "src": "/images/singles/36cecf3b2e.jpg",
+    "label": "android",
+    "device": "Asus Zenfone2Laser",
+    "source": "VISION",
+    "source_file": "D23_I_nat_0028.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f8675e1591",
+    "src": "/images/singles/f8675e1591.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0012.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f7b63de87e",
+    "src": "/images/singles/f7b63de87e.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0011.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "926a60e41d",
+    "src": "/images/singles/926a60e41d.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0058.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a9bdc2b9a9",
+    "src": "/images/singles/a9bdc2b9a9.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0070.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "c36d8a3c55",
+    "src": "/images/singles/c36d8a3c55.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3",
+    "source": "VISION",
+    "source_file": "D11_I_nat_0069.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8f1724ce87",
+    "src": "/images/singles/8f1724ce87.jpg",
+    "label": "android",
+    "device": "Lenovo P70A",
+    "source": "VISION",
+    "source_file": "D07_I_nat_0078.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "ec78d1e6b0",
+    "src": "/images/singles/ec78d1e6b0.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3",
+    "source": "VISION",
+    "source_file": "D11_I_nat_0032.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "b9713a6d54",
+    "src": "/images/singles/b9713a6d54.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0069.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "36a34acedb",
+    "src": "/images/singles/36a34acedb.jpg",
+    "label": "android",
+    "device": "Xiaomi RedmiNote3",
+    "source": "VISION",
+    "source_file": "D24_I_nat_0041.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f47e37eaec",
+    "src": "/images/singles/f47e37eaec.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0015.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "9815402170",
+    "src": "/images/singles/9815402170.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0047.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "7a8579a734",
+    "src": "/images/singles/7a8579a734.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0045.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2c535e38ad",
+    "src": "/images/singles/2c535e38ad.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0046.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "1f180c3593",
+    "src": "/images/singles/1f180c3593.jpg",
+    "label": "android",
+    "device": "Huawei P9",
+    "source": "VISION",
+    "source_file": "D03_I_nat_0048.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6a9162e85f",
+    "src": "/images/singles/6a9162e85f.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0076.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "ba059e1f75",
+    "src": "/images/singles/ba059e1f75.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS4Mini",
+    "source": "VISION",
+    "source_file": "D31_I_nat_0075.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "b84d728022",
+    "src": "/images/singles/b84d728022.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0004.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "9fe93ce191",
+    "src": "/images/singles/9fe93ce191.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS5",
+    "source": "VISION",
+    "source_file": "D27_I_nat_0018.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "3c334b448e",
+    "src": "/images/singles/3c334b448e.jpg",
+    "label": "android",
+    "device": "Sony XperiaZ1Compact",
+    "source": "VISION",
+    "source_file": "D12_I_nat_0021.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "17bbcdb3b0",
+    "src": "/images/singles/17bbcdb3b0.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyTrendPlus",
+    "source": "VISION",
+    "source_file": "D22_I_nat_0008.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6e30bd035e",
+    "src": "/images/singles/6e30bd035e.jpg",
+    "label": "android",
+    "device": "Xiaomi RedmiNote3",
+    "source": "VISION",
+    "source_file": "D24_I_nat_0028.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "566f8626ea",
+    "src": "/images/singles/566f8626ea.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0055.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "910e756e51",
+    "src": "/images/singles/910e756e51.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0032.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "7a5ad65a44",
+    "src": "/images/singles/7a5ad65a44.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0098.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "9e32f47292",
+    "src": "/images/singles/9e32f47292.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0036.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e95bd8e106",
+    "src": "/images/singles/e95bd8e106.jpg",
+    "label": "android",
+    "device": "Asus Zenfone2Laser",
+    "source": "VISION",
+    "source_file": "D23_I_nat_0009.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f6e98ff72b",
+    "src": "/images/singles/f6e98ff72b.jpg",
+    "label": "android",
+    "device": "Asus Zenfone2Laser",
+    "source": "VISION",
+    "source_file": "D23_I_nat_0052.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "fa622c1560",
+    "src": "/images/singles/fa622c1560.jpg",
+    "label": "android",
+    "device": "LG D290",
+    "source": "VISION",
+    "source_file": "D04_I_nat_0035.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "933c40946b",
+    "src": "/images/singles/933c40946b.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0029.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8d124505f6",
+    "src": "/images/singles/8d124505f6.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyTrendPlus",
+    "source": "VISION",
+    "source_file": "D22_I_nat_0041.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "b85940b66c",
+    "src": "/images/singles/b85940b66c.jpg",
+    "label": "android",
+    "device": "Sony XperiaZ1Compact",
+    "source": "VISION",
+    "source_file": "D12_I_nat_0035.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2f57f83209",
+    "src": "/images/singles/2f57f83209.jpg",
+    "label": "android",
+    "device": "Huawei Ascend",
+    "source": "VISION",
+    "source_file": "D33_I_nat_0097.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0bcf5390aa",
+    "src": "/images/singles/0bcf5390aa.jpg",
+    "label": "android",
+    "device": "Huawei Honor5c",
+    "source": "VISION",
+    "source_file": "D30_I_nat_0096.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "cc841c8352",
+    "src": "/images/singles/cc841c8352.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0014.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "04b75bbe3d",
+    "src": "/images/singles/04b75bbe3d.jpg",
+    "label": "android",
+    "device": "Huawei P8",
+    "source": "VISION",
+    "source_file": "D28_I_nat_0096.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "4dadda85fd",
+    "src": "/images/singles/4dadda85fd.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0065.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6383881a6d",
+    "src": "/images/singles/6383881a6d.jpg",
+    "label": "android",
+    "device": "Xiaomi RedmiNote3",
+    "source": "VISION",
+    "source_file": "D24_I_nat_0073.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2b2ba9ec07",
+    "src": "/images/singles/2b2ba9ec07.jpg",
+    "label": "android",
+    "device": "LG D290",
+    "source": "VISION",
+    "source_file": "D04_I_nat_0086.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8ad23f91a0",
+    "src": "/images/singles/8ad23f91a0.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0020.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2d1a412e4a",
+    "src": "/images/singles/2d1a412e4a.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0081.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "545685057c",
+    "src": "/images/singles/545685057c.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0036.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6e0623068e",
+    "src": "/images/singles/6e0623068e.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0012.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e5ff25f788",
+    "src": "/images/singles/e5ff25f788.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0029.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "98a9335d60",
+    "src": "/images/singles/98a9335d60.jpg",
+    "label": "android",
+    "device": "LG D290",
+    "source": "VISION",
+    "source_file": "D04_I_nat_0090.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f0ea910119",
+    "src": "/images/singles/f0ea910119.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0099.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "76afef9a1d",
+    "src": "/images/singles/76afef9a1d.jpg",
+    "label": "android",
+    "device": "Huawei P9",
+    "source": "VISION",
+    "source_file": "D03_I_nat_0046.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5a183f4263",
+    "src": "/images/singles/5a183f4263.jpg",
+    "label": "android",
+    "device": "OnePlus A3003",
+    "source": "VISION",
+    "source_file": "D32_I_nat_0012.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "465c6395a0",
+    "src": "/images/singles/465c6395a0.jpg",
+    "label": "android",
+    "device": "Wiko Ridge4G",
+    "source": "VISION",
+    "source_file": "D21_I_nat_0042.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a4b542ce41",
+    "src": "/images/singles/a4b542ce41.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0098.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "549311c59a",
+    "src": "/images/singles/549311c59a.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0004.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "4192e9970a",
+    "src": "/images/singles/4192e9970a.jpg",
+    "label": "android",
+    "device": "Huawei Honor5c",
+    "source": "VISION",
+    "source_file": "D30_I_nat_0075.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "20c9d5b333",
+    "src": "/images/singles/20c9d5b333.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0025.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "23417181ac",
+    "src": "/images/singles/23417181ac.jpg",
+    "label": "android",
+    "device": "Huawei P8",
+    "source": "VISION",
+    "source_file": "D28_I_nat_0069.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "20759fba2e",
+    "src": "/images/singles/20759fba2e.jpg",
+    "label": "android",
+    "device": "OnePlus A3003",
+    "source": "VISION",
+    "source_file": "D32_I_nat_0064.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "cb393b75ef",
+    "src": "/images/singles/cb393b75ef.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0021.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "3aa3354568",
+    "src": "/images/singles/3aa3354568.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS5",
+    "source": "VISION",
+    "source_file": "D27_I_nat_0034.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "926661e551",
+    "src": "/images/singles/926661e551.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0013.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f8cd154ba8",
+    "src": "/images/singles/f8cd154ba8.jpg",
+    "label": "android",
+    "device": "Huawei P9Lite",
+    "source": "VISION",
+    "source_file": "D16_I_nat_0082.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "11128d29a6",
+    "src": "/images/singles/11128d29a6.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0074.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2aa9c0f44b",
+    "src": "/images/singles/2aa9c0f44b.jpg",
+    "label": "android",
+    "device": "Lenovo P70A",
+    "source": "VISION",
+    "source_file": "D07_I_nat_0010.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "655d238a5e",
+    "src": "/images/singles/655d238a5e.jpg",
+    "label": "android",
+    "device": "Sony XperiaZ1Compact",
+    "source": "VISION",
+    "source_file": "D12_I_nat_0049.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f63c60a293",
+    "src": "/images/singles/f63c60a293.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0070.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0e5d08f64c",
+    "src": "/images/singles/0e5d08f64c.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3Mini",
+    "source": "VISION",
+    "source_file": "D01_I_nat_0047.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "beea65807c",
+    "src": "/images/singles/beea65807c.jpg",
+    "label": "android",
+    "device": "Huawei P9Lite",
+    "source": "VISION",
+    "source_file": "D16_I_nat_0072.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f99ea87cf5",
+    "src": "/images/singles/f99ea87cf5.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS5",
+    "source": "VISION",
+    "source_file": "D27_I_nat_0059.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "4167100b23",
+    "src": "/images/singles/4167100b23.jpg",
+    "label": "android",
+    "device": "Huawei Ascend",
+    "source": "VISION",
+    "source_file": "D33_I_nat_0020.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "abac881937",
+    "src": "/images/singles/abac881937.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0044.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "55e3af6bd9",
+    "src": "/images/singles/55e3af6bd9.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0038.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f081275914",
+    "src": "/images/singles/f081275914.jpg",
+    "label": "android",
+    "device": "Sony XperiaZ1Compact",
+    "source": "VISION",
+    "source_file": "D12_I_nat_0060.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f10c149bdd",
+    "src": "/images/singles/f10c149bdd.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0049.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5ec979a443",
+    "src": "/images/singles/5ec979a443.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0090.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "26f522a5f6",
+    "src": "/images/singles/26f522a5f6.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS4Mini",
+    "source": "VISION",
+    "source_file": "D31_I_nat_0047.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "dcd5a2a8d9",
+    "src": "/images/singles/dcd5a2a8d9.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0080.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "f31f9bd878",
+    "src": "/images/singles/f31f9bd878.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0006.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e6df6cc68f",
+    "src": "/images/singles/e6df6cc68f.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0090.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5efdaa9af1",
+    "src": "/images/singles/5efdaa9af1.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3Mini",
+    "source": "VISION",
+    "source_file": "D01_I_nat_0059.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a5e7300c58",
+    "src": "/images/singles/a5e7300c58.jpg",
+    "label": "android",
+    "device": "OnePlus A3000",
+    "source": "VISION",
+    "source_file": "D25_I_nat_0064.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2a8f8b0c7a",
+    "src": "/images/singles/2a8f8b0c7a.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0030.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "421c441cd4",
+    "src": "/images/singles/421c441cd4.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0014.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6fd9b0adfb",
+    "src": "/images/singles/6fd9b0adfb.jpg",
+    "label": "android",
+    "device": "Lenovo P70A",
+    "source": "VISION",
+    "source_file": "D07_I_nat_0082.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "9c18cac40f",
+    "src": "/images/singles/9c18cac40f.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0011.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "81e1af3196",
+    "src": "/images/singles/81e1af3196.jpg",
+    "label": "android",
+    "device": "Huawei Ascend",
+    "source": "VISION",
+    "source_file": "D33_I_nat_0007.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "ae9f0b1ce3",
+    "src": "/images/singles/ae9f0b1ce3.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D15_I_nat_0049.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a567692539",
+    "src": "/images/singles/a567692539.jpg",
+    "label": "android",
+    "device": "OnePlus A3003",
+    "source": "VISION",
+    "source_file": "D32_I_nat_0018.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5c6041269f",
+    "src": "/images/singles/5c6041269f.jpg",
+    "label": "android",
+    "device": "Huawei P9",
+    "source": "VISION",
+    "source_file": "D03_I_nat_0021.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "4f88c68565",
+    "src": "/images/singles/4f88c68565.jpg",
+    "label": "android",
+    "device": "Huawei Honor5c",
+    "source": "VISION",
+    "source_file": "D30_I_nat_0055.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "32985f2107",
+    "src": "/images/singles/32985f2107.jpg",
+    "label": "android",
+    "device": "Xiaomi RedmiNote3",
+    "source": "VISION",
+    "source_file": "D24_I_nat_0092.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "3ddbae48fd",
+    "src": "/images/singles/3ddbae48fd.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0095.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6c26e2fd1c",
+    "src": "/images/singles/6c26e2fd1c.jpg",
+    "label": "android",
+    "device": "Huawei P8",
+    "source": "VISION",
+    "source_file": "D28_I_nat_0072.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "05b3b72457",
+    "src": "/images/singles/05b3b72457.jpg",
+    "label": "android",
+    "device": "LG D290",
+    "source": "VISION",
+    "source_file": "D04_I_nat_0088.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0f9564deec",
+    "src": "/images/singles/0f9564deec.jpg",
+    "label": "android",
+    "device": "Huawei P9Lite",
+    "source": "VISION",
+    "source_file": "D16_I_nat_0089.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0406f10d4f",
+    "src": "/images/singles/0406f10d4f.jpg",
+    "label": "android",
+    "device": "Asus Zenfone2Laser",
+    "source": "VISION",
+    "source_file": "D23_I_nat_0035.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "838e06bfec",
+    "src": "/images/singles/838e06bfec.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0055.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "80557333d4",
+    "src": "/images/singles/80557333d4.jpg",
+    "label": "android",
+    "device": "OnePlus A3000",
+    "source": "VISION",
+    "source_file": "D25_I_nat_0083.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "a9959f671c",
+    "src": "/images/singles/a9959f671c.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS4Mini",
+    "source": "VISION",
+    "source_file": "D31_I_nat_0052.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "b7178ed469",
+    "src": "/images/singles/b7178ed469.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D29_I_nat_0091.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "afc10196f3",
+    "src": "/images/singles/afc10196f3.jpg",
+    "label": "android",
+    "device": "OnePlus A3003",
+    "source": "VISION",
+    "source_file": "D32_I_nat_0066.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8e994ab8fa",
+    "src": "/images/singles/8e994ab8fa.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0059.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e7efb07a8b",
+    "src": "/images/singles/e7efb07a8b.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0036.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "2053e4d5dd",
+    "src": "/images/singles/2053e4d5dd.jpg",
+    "label": "android",
+    "device": "Huawei Honor5c",
+    "source": "VISION",
+    "source_file": "D30_I_nat_0034.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "815c44c839",
+    "src": "/images/singles/815c44c839.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyTrendPlus",
+    "source": "VISION",
+    "source_file": "D22_I_nat_0005.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "aed93cdab7",
+    "src": "/images/singles/aed93cdab7.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0013.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "c3b5322660",
+    "src": "/images/singles/c3b5322660.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0082.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6fa6521181",
+    "src": "/images/singles/6fa6521181.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0001.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "745dafb315",
+    "src": "/images/singles/745dafb315.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D02_I_nat_0095.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "22b2267b49",
+    "src": "/images/singles/22b2267b49.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0034.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "06c5ad2516",
+    "src": "/images/singles/06c5ad2516.jpg",
+    "label": "android",
+    "device": "OnePlus A3000",
+    "source": "VISION",
+    "source_file": "D25_I_nat_0084.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "463d6454ab",
+    "src": "/images/singles/463d6454ab.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0038.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8304a9eaf3",
+    "src": "/images/singles/8304a9eaf3.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0012.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "eb4baac16a",
+    "src": "/images/singles/eb4baac16a.jpg",
+    "label": "android",
+    "device": "OnePlus A3000",
+    "source": "VISION",
+    "source_file": "D25_I_nat_0051.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0a699a11d0",
+    "src": "/images/singles/0a699a11d0.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5",
+    "source": "VISION",
+    "source_file": "D34_I_nat_0049.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "1dfd5ec8e1",
+    "src": "/images/singles/1dfd5ec8e1.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS5",
+    "source": "VISION",
+    "source_file": "D27_I_nat_0019.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "094ea326e4",
+    "src": "/images/singles/094ea326e4.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3Mini",
+    "source": "VISION",
+    "source_file": "D01_I_nat_0082.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "da4c174caf",
+    "src": "/images/singles/da4c174caf.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0016.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "fc55a8eca7",
+    "src": "/images/singles/fc55a8eca7.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4s",
+    "source": "VISION",
+    "source_file": "D10_I_nat_0054.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5c271674a7",
+    "src": "/images/singles/5c271674a7.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0005.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "568423cb2b",
+    "src": "/images/singles/568423cb2b.jpg",
+    "label": "android",
+    "device": "Wiko Ridge4G",
+    "source": "VISION",
+    "source_file": "D21_I_nat_0100.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6933170bfb",
+    "src": "/images/singles/6933170bfb.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0072.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "626d1b7163",
+    "src": "/images/singles/626d1b7163.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6Plus",
+    "source": "VISION",
+    "source_file": "D19_I_nat_0071.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5e7c16a89b",
+    "src": "/images/singles/5e7c16a89b.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0028.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "d64acab815",
+    "src": "/images/singles/d64acab815.jpg",
+    "label": "android",
+    "device": "Wiko Ridge4G",
+    "source": "VISION",
+    "source_file": "D21_I_nat_0099.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "6358e80c88",
+    "src": "/images/singles/6358e80c88.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyTrendPlus",
+    "source": "VISION",
+    "source_file": "D22_I_nat_0030.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "01ee8973c0",
+    "src": "/images/singles/01ee8973c0.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0026.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "c3f5fec0c8",
+    "src": "/images/singles/c3f5fec0c8.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0018.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "d12d0f4d81",
+    "src": "/images/singles/d12d0f4d81.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D18_I_nat_0078.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "51bbe75efb",
+    "src": "/images/singles/51bbe75efb.jpg",
+    "label": "android",
+    "device": "Huawei P8",
+    "source": "VISION",
+    "source_file": "D28_I_nat_0032.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "983328b774",
+    "src": "/images/singles/983328b774.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0004.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "efb2523890",
+    "src": "/images/singles/efb2523890.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS3",
+    "source": "VISION",
+    "source_file": "D11_I_nat_0022.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "e6e0da202c",
+    "src": "/images/singles/e6e0da202c.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone4",
+    "source": "VISION",
+    "source_file": "D09_I_nat_0078.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "c7ba91cc4d",
+    "src": "/images/singles/c7ba91cc4d.jpg",
+    "label": "android",
+    "device": "Samsung GalaxyS4Mini",
+    "source": "VISION",
+    "source_file": "D31_I_nat_0029.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "8a1524bb2d",
+    "src": "/images/singles/8a1524bb2d.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone6",
+    "source": "VISION",
+    "source_file": "D06_I_nat_0030.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "3a8f22afc0",
+    "src": "/images/singles/3a8f22afc0.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D05_I_nat_0087.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "d1a8dec887",
+    "src": "/images/singles/d1a8dec887.jpg",
+    "label": "android",
+    "device": "Huawei P9Lite",
+    "source": "VISION",
+    "source_file": "D16_I_nat_0029.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "5e99f99957",
+    "src": "/images/singles/5e99f99957.jpg",
+    "label": "iphone",
+    "device": "Apple iPhone5c",
+    "source": "VISION",
+    "source_file": "D14_I_nat_0044.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  },
+  {
+    "id": "0d9e1672a8",
+    "src": "/images/singles/0d9e1672a8.jpg",
+    "label": "android",
+    "device": "Huawei P9",
+    "source": "VISION",
+    "source_file": "D03_I_nat_0027.jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "VISION dataset (Shullani et al., EURASIP J. Inf. Secur. 2017), CSP Lab, University of Florence"
+  }
+]
