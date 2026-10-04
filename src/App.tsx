@@ -96,16 +96,17 @@ function gradeLine(percent: number): string {
 }
 
 function siteUrl(): string {
-  return typeof location !== 'undefined' ? `${location.origin}/` : 'https://camvcam.com/'
+  return 'https://camvcam.com/'
 }
 
 function shareBlurb(score: LastResult | null): string {
   const challenge =
     'Think you can spot iPhone vs Android by the photo alone?'
+  const url = siteUrl()
   if (!score || score.played === 0) {
-    return `${challenge}\n${siteUrl()}`
+    return `${challenge}\n\n${url}`
   }
-  return `I scored ${score.correct}/${score.played} (${score.percent}%) on camvcam. ${challenge}\n${siteUrl()}`
+  return `I scored ${score.correct}/${score.played} (${score.percent}%) on camvcam.\n\n${challenge}\n\n${url}`
 }
 
 /** Native share tray on touch devices (needs secure context: https or localhost). */
@@ -265,6 +266,19 @@ function App() {
     if (photos) setGuess(newGuessSession(photos))
   }
 
+  function tryOtherMode() {
+    setShareFlash(null)
+    if (screen === 'compare') {
+      if (photos) setGuess(newGuessSession(photos))
+      setPlayMode('guess')
+      setScreen('guess')
+      return
+    }
+    if (pairs) setCompare(newCompareSession(pairs))
+    setPlayMode('compare')
+    setScreen('compare')
+  }
+
   function scoreForShare(): LastResult | null {
     if (!active || active.played === 0) return null
     return {
@@ -414,6 +428,9 @@ function App() {
             <button type="button" className="end label-btn" onClick={playAgain}>
               <ReplayIcon />
               <span>Play again</span>
+            </button>
+            <button type="button" className="end" onClick={tryOtherMode}>
+              {screen === 'compare' ? 'Try Guess Mode' : 'Try Compare Mode'}
             </button>
           </div>
         </section>
