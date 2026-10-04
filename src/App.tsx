@@ -1,18 +1,16 @@
 import { useEffect, useState } from 'react'
+import { loadPairs, singlesFromPairs } from './lib/deck'
 import {
-  CreditsIcon,
-  ReplayIcon,
-  ShareIcon,
-  TickIcon,
-} from './icons'
-import { loadPairs, shotSrc, singlesFromPairs } from './lib/deck'
-import {
-  gradeLine,
   newCompareSession,
   newGuessSession,
   percentOf,
 } from './lib/session'
 import { shareInvite } from './lib/share'
+import { AppHeader, type Screen } from './screens/AppHeader'
+import { CompareScreen } from './screens/CompareScreen'
+import { CreditsScreen } from './screens/CreditsScreen'
+import { GuessScreen } from './screens/GuessScreen'
+import { ResultsScreen } from './screens/ResultsScreen'
 import {
   LAST_RESULT_KEY,
   type CompareSession,
@@ -24,8 +22,6 @@ import {
 } from './types'
 
 const BRAND = 'camvcam'
-
-type Screen = 'guess' | 'compare' | 'credits'
 
 function App() {
   const [photos, setPhotos] = useState<SinglePhoto[] | null>(null)
@@ -212,195 +208,58 @@ function App() {
 
   const hud = active ?? guess
   const percent = percentOf(hud.correct, hud.played)
-  const guessPhoto = guess.deck[guess.index]
-  const compareRound = compare.deck[compare.index]
 
   return (
     <div className="shell">
-      <header>
-        <div className="top">
-          <div className="brand">
-            {BRAND.slice(0, 4)}
-            <span>{BRAND.slice(4)}</span>
-          </div>
-          <div className="hud">
-            <div>
-              <b>{hud.correct}</b>correct
-            </div>
-            <div>
-              <b>{hud.played}</b>played
-            </div>
-          </div>
-        </div>
-        <div className="tabs">
-          <button
-            type="button"
-            className={screen === 'guess' ? 'on' : undefined}
-            onClick={() => {
-              setPlayMode('guess')
-              setScreen('guess')
-            }}
-          >
-            Guess
-          </button>
-          <button
-            type="button"
-            className={screen === 'compare' ? 'on' : undefined}
-            onClick={() => {
-              setPlayMode('compare')
-              setScreen('compare')
-            }}
-          >
-            Compare
-          </button>
-          <div className="tab-tools">
-            <button
-              type="button"
-              className={`icon-btn tab-tool${screen === 'credits' ? ' on' : ''}`}
-              aria-label="Credits"
-              onClick={() =>
-                setScreen((s) => (s === 'credits' ? playMode : 'credits'))
-              }
-            >
-              <CreditsIcon />
-            </button>
-            <button
-              type="button"
-              className={`icon-btn tab-tool${shareFlash ? ' pop' : ''}`}
-              aria-label={shareFlash ? 'Shared' : 'Share'}
-              onClick={() => void onShare()}
-            >
-              {shareFlash ? <TickIcon /> : <ShareIcon />}
-            </button>
-          </div>
-        </div>
-      </header>
+      <AppHeader
+        brand={BRAND}
+        correct={hud.correct}
+        played={hud.played}
+        screen={screen}
+        shareFlash={shareFlash}
+        onGuess={() => {
+          setPlayMode('guess')
+          setScreen('guess')
+        }}
+        onCompare={() => {
+          setPlayMode('compare')
+          setScreen('compare')
+        }}
+        onCreditsToggle={() =>
+          setScreen((s) => (s === 'credits' ? playMode : 'credits'))
+        }
+        onShare={() => void onShare()}
+      />
 
       {screen === 'credits' ? (
-        <section className="credits">
-          <h2 className="ask">Credits</h2>
-          <p>
-            Photos from{' '}
-            <a
-              href="https://huggingface.co/datasets/l-li/five-cam-xyz-rgb-1024"
-              target="_blank"
-              rel="noreferrer"
-            >
-              FiveCam
-            </a>{' '}
-            (Uni-ISP), MIT license.
-          </p>
-          <p className="muted">
-            Li et al., “Uni-ISP: Unifying the Learning of ISPs from Multiple
-            Cameras,” 2024.
-          </p>
-        </section>
+        <CreditsScreen />
       ) : active?.ended ? (
-        <section className="results">
-          <p className="result-percent">{percent}%</p>
-          <p className="result-line">
-            {active.correct} / {active.played} correct
-          </p>
-          <p className="result-grade">{gradeLine(percent)}</p>
-          <div className="result-actions">
-            <button
-              type="button"
-              className={`lock label-btn${shareFlash ? ' pop' : ''}`}
-              aria-label={shareFlash ? 'Shared' : 'Share score'}
-              onClick={() => void onShare()}
-            >
-              {shareFlash ? <TickIcon /> : <ShareIcon />}
-              <span>{shareFlash ? 'Shared' : 'Share'}</span>
-            </button>
-            <button type="button" className="end label-btn" onClick={playAgain}>
-              <ReplayIcon />
-              <span>Play again</span>
-            </button>
-            <button type="button" className="end" onClick={tryOtherMode}>
-              {screen === 'compare' ? 'Try Guess Mode' : 'Try Compare Mode'}
-            </button>
-          </div>
-        </section>
+        <ResultsScreen
+          correct={active.correct}
+          played={active.played}
+          percent={percent}
+          otherModeLabel={
+            screen === 'compare' ? 'Try Guess Mode' : 'Try Compare Mode'
+          }
+          shareFlash={shareFlash}
+          onShare={() => void onShare()}
+          onPlayAgain={playAgain}
+          onTryOther={tryOtherMode}
+        />
       ) : screen === 'compare' ? (
-        <>
-          <section className="photo-slot compare-slot">
-            {compareRound ? (
-              <div className="compare-pair">
-                <button
-                  type="button"
-                  className="compare-side"
-                  onClick={() => onComparePick('left')}
-                >
-                  <img
-                    src={shotSrc(
-                      compareRound.leftIsIphone
-                        ? compareRound.pair.iphone
-                        : compareRound.pair.android,
-                    )}
-                    alt="Left phone photo"
-                  />
-                </button>
-                <button
-                  type="button"
-                  className="compare-side"
-                  onClick={() => onComparePick('right')}
-                >
-                  <img
-                    src={shotSrc(
-                      compareRound.leftIsIphone
-                        ? compareRound.pair.android
-                        : compareRound.pair.iphone,
-                    )}
-                    alt="Right phone photo"
-                  />
-                </button>
-              </div>
-            ) : null}
-            {compare.flash ? (
-              <p className={`flash ${compare.flash}`}>{compare.flash}</p>
-            ) : null}
-          </section>
-          <footer>
-            <p className="ask">Which is the iPhone?</p>
-            <p className="hint">Tap a photo</p>
-            <button type="button" className="end" onClick={endActive}>
-              End
-            </button>
-          </footer>
-        </>
+        <CompareScreen
+          round={compare.deck[compare.index]}
+          flash={compare.flash}
+          onPick={onComparePick}
+          onEnd={endActive}
+        />
       ) : (
-        <>
-          <section className="photo-slot">
-            {guessPhoto ? (
-              <img src={guessPhoto.src} alt="Mystery phone photo" />
-            ) : null}
-            {guess.flash ? (
-              <p className={`flash ${guess.flash}`}>{guess.flash}</p>
-            ) : null}
-          </section>
-          <footer>
-            <p className="ask">iPhone or Android?</p>
-            <div className="actions">
-              <button
-                type="button"
-                className="choice live"
-                onClick={() => onGuessPick('iphone')}
-              >
-                iPhone
-              </button>
-              <button
-                type="button"
-                className="choice live"
-                onClick={() => onGuessPick('android')}
-              >
-                Android
-              </button>
-            </div>
-            <button type="button" className="end" onClick={endActive}>
-              End
-            </button>
-          </footer>
-        </>
+        <GuessScreen
+          photo={guess.deck[guess.index]}
+          flash={guess.flash}
+          onPick={onGuessPick}
+          onEnd={endActive}
+        />
       )}
     </div>
   )
