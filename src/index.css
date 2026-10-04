@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=IBM+Plex+Sans:wght@400;600&display=swap');
 
 :root {
-  --asphalt: #1c1c1c;
-  --road: #2a2a2a;
-  --citrus: #d6ff3f;
-  --chalk: #f4f4f0;
-  --mute: #8a8a82;
+  /* Lab — graphite + cyan */
+  --asphalt: #12161c;
+  --road: #1c2430;
+  --citrus: #3dffe8;
+  --chalk: #e8f4f2;
+  --mute: #7a9190;
+  --line: #3a4a55;
+  --slot-line: #2a3540;
+  --danger: #ff7a9a;
+  --bg: repeating-linear-gradient(-18deg, #1a222c 0 1px, #12161c 1px 16px);
   --radius: 18px;
   --radius-sm: 12px;
   --pad: 14px;
@@ -30,13 +35,10 @@ body,
 }
 
 body {
-  background: repeating-linear-gradient(
-    -12deg,
-    #222 0 2px,
-    #1c1c1c 2px 18px
-  );
+  background: var(--bg);
   min-height: 100dvh;
   -webkit-tap-highlight-color: transparent;
+  color: var(--chalk);
 }
 
 button {
@@ -117,7 +119,7 @@ header {
 }
 
 .tabs button {
-  border: 1px solid #555;
+  border: 1px solid var(--line);
   background: transparent;
   color: var(--chalk);
   font: 600 0.78rem 'IBM Plex Sans', sans-serif;
@@ -180,7 +182,7 @@ header {
   display: grid;
   place-items: center;
   color: var(--mute);
-  border: 1px solid #333;
+  border: 1px solid var(--slot-line);
   overflow: hidden;
 }
 
@@ -206,7 +208,7 @@ header {
 }
 
 .flash.wrong {
-  color: #ff8a8a;
+  color: var(--danger);
 }
 
 .error,
@@ -216,7 +218,7 @@ header {
 }
 
 .error {
-  color: #ff8a8a;
+  color: var(--danger);
   font-weight: 600;
 }
 
@@ -346,7 +348,7 @@ header {
   margin-top: 10px;
   background: transparent;
   color: var(--chalk);
-  border: 1px solid #555;
+  border: 1px solid var(--line);
 }
 
 .ask {
