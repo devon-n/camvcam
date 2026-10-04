@@ -108,17 +108,21 @@ function shareBlurb(score: LastResult | null): string {
   return `I scored ${score.correct}/${score.played} (${score.percent}%) on camvcam. ${challenge}\n${siteUrl()}`
 }
 
-function canNativeShare(): boolean {
+/** Native share tray on touch devices (needs secure context: https or localhost). */
+function preferNativeShare(): boolean {
+  if (typeof navigator === 'undefined' || typeof navigator.share !== 'function') {
+    return false
+  }
+  if (!window.isSecureContext) return false
   return (
-    typeof navigator !== 'undefined' &&
-    typeof navigator.share === 'function' &&
+    navigator.maxTouchPoints > 0 ||
     window.matchMedia('(pointer: coarse)').matches
   )
 }
 
 async function shareInvite(score: LastResult | null): Promise<'shared' | 'copied' | null> {
   const text = shareBlurb(score)
-  if (canNativeShare()) {
+  if (preferNativeShare()) {
     try {
       await navigator.share({ title: 'camvcam', text })
       return 'shared'
