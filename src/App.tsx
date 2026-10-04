@@ -46,6 +46,17 @@ function ReplayIcon() {
   )
 }
 
+function CreditsIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+      <path
+        fill="currentColor"
+        d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"
+      />
+    </svg>
+  )
+}
+
 function newGuessSession(photos: SinglePhoto[]): GuessSession {
   return {
     deck: shuffle(photos),
@@ -133,6 +144,7 @@ function App() {
   const [compare, setCompare] = useState<CompareSession | null>(null)
   const [shareFlash, setShareFlash] = useState<'shared' | 'copied' | null>(null)
   const [screen, setScreen] = useState<Screen>('guess')
+  const [playMode, setPlayMode] = useState<'guess' | 'compare'>('guess')
 
   useEffect(() => {
     let cancelled = false
@@ -319,32 +331,43 @@ function App() {
           <button
             type="button"
             className={screen === 'guess' ? 'on' : undefined}
-            onClick={() => setScreen('guess')}
+            onClick={() => {
+              setPlayMode('guess')
+              setScreen('guess')
+            }}
           >
             Guess
           </button>
           <button
             type="button"
             className={screen === 'compare' ? 'on' : undefined}
-            onClick={() => setScreen('compare')}
+            onClick={() => {
+              setPlayMode('compare')
+              setScreen('compare')
+            }}
           >
             Compare
           </button>
-          <button
-            type="button"
-            className={screen === 'credits' ? 'on' : undefined}
-            onClick={() => setScreen('credits')}
-          >
-            Credits
-          </button>
-          <button
-            type="button"
-            className={`tab-share icon-btn${shareFlash ? ' pop' : ''}`}
-            aria-label={shareFlash ? 'Shared' : 'Share'}
-            onClick={() => void onShare()}
-          >
-            {shareFlash ? <TickIcon /> : <ShareIcon />}
-          </button>
+          <div className="tab-tools">
+            <button
+              type="button"
+              className={`icon-btn tab-tool${screen === 'credits' ? ' on' : ''}`}
+              aria-label="Credits"
+              onClick={() =>
+                setScreen((s) => (s === 'credits' ? playMode : 'credits'))
+              }
+            >
+              <CreditsIcon />
+            </button>
+            <button
+              type="button"
+              className={`icon-btn tab-tool${shareFlash ? ' pop' : ''}`}
+              aria-label={shareFlash ? 'Shared' : 'Share'}
+              onClick={() => void onShare()}
+            >
+              {shareFlash ? <TickIcon /> : <ShareIcon />}
+            </button>
+          </div>
         </div>
       </header>
 

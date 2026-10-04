@@ -137,8 +137,14 @@ header {
   border-color: var(--citrus);
 }
 
-.tabs .tab-share {
+.tab-tools {
   margin-left: auto;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.tabs .tab-tool {
   width: 40px;
   padding: 0;
   display: grid;
