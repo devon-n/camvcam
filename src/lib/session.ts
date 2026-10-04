@@ -3,9 +3,11 @@ import type {
   CompareRound,
   CompareSession,
   GuessSession,
+  LastResult,
   PhotoPair,
   SinglePhoto,
 } from '../types'
+import { LAST_RESULT_KEY } from '../types'
 
 export function newGuessSession(photos: SinglePhoto[]): GuessSession {
   return {
@@ -35,6 +37,17 @@ export function newCompareSession(pairs: PhotoPair[]): CompareSession {
 
 export function percentOf(correct: number, played: number): number {
   return played === 0 ? 0 : Math.round((correct / played) * 100)
+}
+
+export function persistResult(correct: number, played: number) {
+  localStorage.setItem(
+    LAST_RESULT_KEY,
+    JSON.stringify({
+      correct,
+      played,
+      percent: percentOf(correct, played),
+    } satisfies LastResult),
+  )
 }
 
 export function gradeLine(percent: number): string {
