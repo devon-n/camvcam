@@ -2,40 +2,27 @@
 
 ## Guess mode (singles) — ready
 
-**Dataset:** [VISION](https://lesc.dinfo.unifi.it/VISION/)  
-**License:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)  
-**Paper:** Shullani et al., “VISION: a video and image dataset for source identification,” EURASIP Journal on Information Security, 2017.  
-**Credit:** CSP Lab, University of Florence  
+**Dataset:** [FiveCam](https://huggingface.co/datasets/l-li/five-cam-xyz-rgb-1024) (Uni-ISP)  
+**License:** MIT  
+**Paper:** Li et al., “Uni-ISP: Unifying the Learning of ISPs from Multiple Cameras,” arXiv:2406.01003, 2024.  
+**Credit:** Lingen Li et al. / Hugging Face `l-li/five-cam-xyz-rgb-1024`
 
-**What we took:** 149 native natural-scene JPEGs (`images/nat/`), resized to max 1600px, ~306 KB avg.
+**What we took:** Newest phones in FiveCam (2021–2022 cohort). Self-camera RGB JPEGs (1024×1024), sharpness-filtered.
 
 | Label   | Count | Devices |
 |---------|------:|---------|
-| iPhone  | 77    | iPhone 4 / 4s / 5 / 5c / 6 / 6 Plus |
-| Android | 72    | Samsung, Huawei, OnePlus, Xiaomi, Sony, LG, Lenovo, Asus, Wiko |
+| iPhone  | 60    | iPhone 14 Pro Max (2022) |
+| Android | 60    | Pixel 6 Pro (2021), Xiaomi Mi 12 (2021/22) |
 
-Files: `data/curated/singles/*.jpg` + `data/curated/singles.json`  
-Opaque IDs in filenames so labels don’t leak.
+Skipped from FiveCam (older): Samsung Galaxy S20, Huawei P40 (2020).
 
-ShareAlike note: if the site redistributes these images, the derivative image set should stay under CC BY-SA 4.0 with attribution (footer / credits page is enough).
+Raw extract (all newest RGB, ~1460 imgs): `data/raw/fivecam/` (gitignored).  
+Published deck: `public/images/singles/` + `public/data/singles.json`.
 
 ## Compare mode (same-scene pairs) — not yet
 
-Best public candidate:
+FiveCam is same-scene across 5 phones (synced shutter) — good candidate for Compare once we wire pairs. Full set also has S20 + P40 if needed for more Android variety.
 
-| Dataset | Why it fits | Blocker |
-|---------|-------------|---------|
-| **SPCD / CDNet** | 667 scenes × 6 phones including iPhone 12 Pro + Android flagships | No clear open license; Google Drive / Baidu only |
-| **SPAQ** | 1,000 same-scene multi-phone shots | Research-only; commercial use needs author permission |
-| **SCIMD-6/17** | CC BY 4.0 | Android-only, 224×224 — useless for visual compare |
+## Previous (retired)
 
-`pairs.json` is empty until we either:
-1. manually download SPCD and confirm reuse is OK for a public site, or
-2. shoot a small set of own pairs, or
-3. email SPAQ authors for permission.
-
-## Skipped
-
-- **SCIMD:** license OK, resolution too low  
-- **FlickrExif / LAION-Mobile:** license per-image or metadata-only  
-- **ForensiCam-215K:** Baidu-only, license unclear  
+VISION (2017, phones through ~2016) was removed as too old for the quiz.
