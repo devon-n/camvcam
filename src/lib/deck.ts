@@ -1,4 +1,4 @@
-import type { SinglePhoto } from '../types'
+import type { PhotoPair, SinglePhoto } from '../types'
 
 export function shuffle<T>(items: T[]): T[] {
   const out = [...items]
@@ -9,6 +9,10 @@ export function shuffle<T>(items: T[]): T[] {
   return out
 }
 
+export function shotSrc(id: string): string {
+  return `/images/singles/${id}.jpg`
+}
+
 export async function loadSingles(): Promise<SinglePhoto[]> {
   const res = await fetch('/data/singles.json')
   if (!res.ok) throw new Error('Could not load photos')
@@ -17,4 +21,14 @@ export async function loadSingles(): Promise<SinglePhoto[]> {
     throw new Error('Could not load photos')
   }
   return data as SinglePhoto[]
+}
+
+export async function loadPairs(): Promise<PhotoPair[]> {
+  const res = await fetch('/data/pairs.json')
+  if (!res.ok) throw new Error('Could not load pairs')
+  const data: unknown = await res.json()
+  if (!Array.isArray(data) || data.length === 0) {
+    throw new Error('Could not load pairs')
+  }
+  return data as PhotoPair[]
 }

@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
-import { loadSingles, shuffle } from './lib/deck'
+import { loadPairs, loadSingles, shotSrc, shuffle } from './lib/deck'
 import {
   LAST_RESULT_KEY,
+  type CompareRound,
+  type CompareSession,
   type GuessSession,
   type LastResult,
   type PhoneLabel,
+  type PhotoPair,
   type SinglePhoto,
 } from './types'
 
@@ -43,9 +46,24 @@ function ReplayIcon() {
   )
 }
 
-function newSession(photos: SinglePhoto[]): GuessSession {
+function newGuessSession(photos: SinglePhoto[]): GuessSession {
   return {
     deck: shuffle(photos),
+    index: 0,
+    correct: 0,
+    played: 0,
+    ended: false,
+    flash: null,
+  }
+}
+
+function newCompareSession(pairs: PhotoPair[]): CompareSession {
+  const deck: CompareRound[] = shuffle(pairs).map((pair) => ({
+    pair,
+    leftIsIphone: Math.random() < 0.5,
+  }))
+  return {
+    deck,
     index: 0,
     correct: 0,
     played: 0,
@@ -87,7 +105,6 @@ function canNativeShare(): boolean {
   )
 }
 
-/** @returns shared | copied | null (cancelled / failed) */
 async function shareInvite(score: LastResult | null): Promise<'shared' | 'copied' | null> {
   const text = shareBlurb(score)
   if (canNativeShare()) {
@@ -106,22 +123,26 @@ async function shareInvite(score: LastResult | null): Promise<'shared' | 'copied
   }
 }
 
-type Screen = 'guess' | 'credits'
+type Screen = 'guess' | 'compare' | 'credits'
 
 function App() {
   const [photos, setPhotos] = useState<SinglePhoto[] | null>(null)
+  const [pairs, setPairs] = useState<PhotoPair[] | null>(null)
   const [loadError, setLoadError] = useState<string | null>(null)
-  const [session, setSession] = useState<GuessSession | null>(null)
+  const [guess, setGuess] = useState<GuessSession | null>(null)
+  const [compare, setCompare] = useState<CompareSession | null>(null)
   const [shareFlash, setShareFlash] = useState<'shared' | 'copied' | null>(null)
   const [screen, setScreen] = useState<Screen>('guess')
 
   useEffect(() => {
     let cancelled = false
-    loadSingles()
-      .then((list) => {
+    Promise.all([loadSingles(), loadPairs()])
+      .then(([singles, pairList]) => {
         if (cancelled) return
-        setPhotos(list)
-        setSession(newSession(list))
+        setPhotos(singles)
+        setPairs(pairList)
+        setGuess(newGuessSession(singles))
+        setCompare(newCompareSession(pairList))
       })
       .catch(() => {
         if (!cancelled) setLoadError('Could not load photos')
@@ -131,61 +152,109 @@ function App() {
     }
   }, [])
 
-  function guess(choice: PhoneLabel) {
-    if (!session || session.ended) return
-    const current = session.deck[session.index]
+  const active =
+    screen === 'compare' ? compare : screen === 'guess' ? guess : null
+
+  function onGuessPick(choice: PhoneLabel) {
+    if (!guess || guess.ended || screen !== 'guess') return
+    const current = guess.deck[guess.index]
     if (!current) return
 
     const hit = current.label === choice
-    const played = session.played + 1
-    const correct = session.correct + (hit ? 1 : 0)
-    const index = session.index + 1
-    const exhausted = index >= session.deck.length
-
+    const played = guess.played + 1
+    const correct = guess.correct + (hit ? 1 : 0)
+    const index = guess.index + 1
+    const exhausted = index >= guess.deck.length
     const next: GuessSession = {
-      ...session,
+      ...guess,
       index,
       played,
       correct,
       flash: hit ? 'correct' : 'wrong',
       ended: exhausted,
     }
-
     if (exhausted) {
-      const last: LastResult = {
-        correct,
-        played,
-        percent: percentOf(correct, played),
-      }
-      localStorage.setItem(LAST_RESULT_KEY, JSON.stringify(last))
+      localStorage.setItem(
+        LAST_RESULT_KEY,
+        JSON.stringify({
+          correct,
+          played,
+          percent: percentOf(correct, played),
+        } satisfies LastResult),
+      )
     }
-
-    setSession(next)
+    setGuess(next)
   }
 
-  function endGame() {
-    if (!session || session.ended) return
-    const last: LastResult = {
-      correct: session.correct,
-      played: session.played,
-      percent: percentOf(session.correct, session.played),
+  function onComparePick(side: 'left' | 'right') {
+    if (!compare || compare.ended || screen !== 'compare') return
+    const round = compare.deck[compare.index]
+    if (!round) return
+
+    const pickedIphone =
+      (side === 'left' && round.leftIsIphone) ||
+      (side === 'right' && !round.leftIsIphone)
+    const played = compare.played + 1
+    const correct = compare.correct + (pickedIphone ? 1 : 0)
+    const index = compare.index + 1
+    const exhausted = index >= compare.deck.length
+    const next: CompareSession = {
+      ...compare,
+      index,
+      played,
+      correct,
+      flash: pickedIphone ? 'correct' : 'wrong',
+      ended: exhausted,
     }
-    localStorage.setItem(LAST_RESULT_KEY, JSON.stringify(last))
-    setSession({ ...session, ended: true, flash: null })
+    if (exhausted) {
+      localStorage.setItem(
+        LAST_RESULT_KEY,
+        JSON.stringify({
+          correct,
+          played,
+          percent: percentOf(correct, played),
+        } satisfies LastResult),
+      )
+    }
+    setCompare(next)
+  }
+
+  function endActive() {
+    if (screen === 'guess' && guess && !guess.ended) {
+      const last: LastResult = {
+        correct: guess.correct,
+        played: guess.played,
+        percent: percentOf(guess.correct, guess.played),
+      }
+      localStorage.setItem(LAST_RESULT_KEY, JSON.stringify(last))
+      setGuess({ ...guess, ended: true, flash: null })
+    }
+    if (screen === 'compare' && compare && !compare.ended) {
+      const last: LastResult = {
+        correct: compare.correct,
+        played: compare.played,
+        percent: percentOf(compare.correct, compare.played),
+      }
+      localStorage.setItem(LAST_RESULT_KEY, JSON.stringify(last))
+      setCompare({ ...compare, ended: true, flash: null })
+    }
   }
 
   function playAgain() {
-    if (!photos) return
     setShareFlash(null)
-    setSession(newSession(photos))
+    if (screen === 'compare') {
+      if (pairs) setCompare(newCompareSession(pairs))
+      return
+    }
+    if (photos) setGuess(newGuessSession(photos))
   }
 
   function scoreForShare(): LastResult | null {
-    if (!session || session.played === 0) return null
+    if (!active || active.played === 0) return null
     return {
-      correct: session.correct,
-      played: session.played,
-      percent: percentOf(session.correct, session.played),
+      correct: active.correct,
+      played: active.played,
+      percent: percentOf(active.correct, active.played),
     }
   }
 
@@ -210,7 +279,7 @@ function App() {
     )
   }
 
-  if (!session) {
+  if (!guess || !compare) {
     return (
       <div className="shell">
         <header>
@@ -224,8 +293,10 @@ function App() {
     )
   }
 
-  const current = session.deck[session.index]
-  const percent = percentOf(session.correct, session.played)
+  const hud = active ?? guess
+  const percent = percentOf(hud.correct, hud.played)
+  const guessPhoto = guess.deck[guess.index]
+  const compareRound = compare.deck[compare.index]
 
   return (
     <div className="shell">
@@ -237,10 +308,10 @@ function App() {
           </div>
           <div className="hud">
             <div>
-              <b>{session.correct}</b>correct
+              <b>{hud.correct}</b>correct
             </div>
             <div>
-              <b>{session.played}</b>played
+              <b>{hud.played}</b>played
             </div>
           </div>
         </div>
@@ -251,6 +322,13 @@ function App() {
             onClick={() => setScreen('guess')}
           >
             Guess
+          </button>
+          <button
+            type="button"
+            className={screen === 'compare' ? 'on' : undefined}
+            onClick={() => setScreen('compare')}
+          >
+            Compare
           </button>
           <button
             type="button"
@@ -289,11 +367,11 @@ function App() {
             Cameras,” 2024.
           </p>
         </section>
-      ) : session.ended ? (
+      ) : active?.ended ? (
         <section className="results">
           <p className="result-percent">{percent}%</p>
           <p className="result-line">
-            {session.correct} / {session.played} correct
+            {active.correct} / {active.played} correct
           </p>
           <p className="result-grade">{gradeLine(percent)}</p>
           <div className="result-actions">
@@ -312,36 +390,82 @@ function App() {
             </button>
           </div>
         </section>
+      ) : screen === 'compare' ? (
+        <>
+          <section className="photo-slot compare-slot">
+            {compareRound ? (
+              <div className="compare-pair">
+                <button
+                  type="button"
+                  className="compare-side"
+                  onClick={() => onComparePick('left')}
+                >
+                  <img
+                    src={shotSrc(
+                      compareRound.leftIsIphone
+                        ? compareRound.pair.iphone
+                        : compareRound.pair.android,
+                    )}
+                    alt="Left phone photo"
+                  />
+                </button>
+                <button
+                  type="button"
+                  className="compare-side"
+                  onClick={() => onComparePick('right')}
+                >
+                  <img
+                    src={shotSrc(
+                      compareRound.leftIsIphone
+                        ? compareRound.pair.android
+                        : compareRound.pair.iphone,
+                    )}
+                    alt="Right phone photo"
+                  />
+                </button>
+              </div>
+            ) : null}
+            {compare.flash ? (
+              <p className={`flash ${compare.flash}`}>{compare.flash}</p>
+            ) : null}
+          </section>
+          <footer>
+            <p className="ask">Which is the iPhone?</p>
+            <p className="hint">Tap a photo</p>
+            <button type="button" className="end" onClick={endActive}>
+              End
+            </button>
+          </footer>
+        </>
       ) : (
         <>
           <section className="photo-slot">
-            {current ? (
-              <img src={current.src} alt="Mystery phone photo" />
+            {guessPhoto ? (
+              <img src={guessPhoto.src} alt="Mystery phone photo" />
             ) : null}
-            {session.flash ? (
-              <p className={`flash ${session.flash}`}>{session.flash}</p>
+            {guess.flash ? (
+              <p className={`flash ${guess.flash}`}>{guess.flash}</p>
             ) : null}
           </section>
-
           <footer>
             <p className="ask">iPhone or Android?</p>
             <div className="actions">
               <button
                 type="button"
                 className="choice live"
-                onClick={() => guess('iphone')}
+                onClick={() => onGuessPick('iphone')}
               >
                 iPhone
               </button>
               <button
                 type="button"
                 className="choice live"
-                onClick={() => guess('android')}
+                onClick={() => onGuessPick('android')}
               >
                 Android
               </button>
             </div>
-            <button type="button" className="end" onClick={endGame}>
+            <button type="button" className="end" onClick={endActive}>
               End
             </button>
           </footer>

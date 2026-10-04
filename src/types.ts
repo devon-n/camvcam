@@ -29,6 +29,21 @@ export type GuessSession = {
   flash: 'correct' | 'wrong' | null
 }
 
+export type CompareRound = {
+  pair: PhotoPair
+  /** true = iPhone on the left */
+  leftIsIphone: boolean
+}
+
+export type CompareSession = {
+  deck: CompareRound[]
+  index: number
+  correct: number
+  played: number
+  ended: boolean
+  flash: 'correct' | 'wrong' | null
+}
+
 export type LastResult = {
   correct: number
   played: number
