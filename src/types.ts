@@ -11,6 +11,15 @@ export type SinglePhoto = {
   credit: string
 }
 
+/** Same-scene pair; image files shared with Singles via id → /images/singles/{id}.jpg */
+export type PhotoPair = {
+  id: string
+  iphone: string
+  android: string
+  iphone_device: string
+  android_device: string
+}
+
 export type GuessSession = {
   deck: SinglePhoto[]
   index: number
